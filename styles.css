@@ -275,7 +275,9 @@ margin: .75rem;
 /* home */
 .home__container{
   padding-top: 10rem;
+  padding-bottom: 5rem;
   padding-left: 1.5rem;
+  padding-right: 1.5rem;
 }
 
 .home{
@@ -305,7 +307,7 @@ margin: .75rem;
 }
 
 .home__content h1{
-  font-size: 3rem;
+  font-size: 3.5rem;
   font-weight: 700;
   margin-top: 1.5rem;
   line-height: 1;
@@ -330,7 +332,7 @@ margin: .75rem;
 } */
 
 .home__content p{
-  font-size: 1rem;
+  font-size: 1.2rem;
   font-weight: 500;
   max-width: 1000px;
 }
@@ -362,6 +364,51 @@ margin: .75rem;
 .text__animation span{
   position: relative;
   color: var(--first-color);
+}
+
+/* about */
+.about__container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0rem;
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+
+.about__container h2 span{
+  color: var(--first-color);
+}
+
+.about-img img{
+  position: relative;
+  width: 100vw;
+  top: 1rem;
+}
+
+.about-content h2{
+  font-size: 3rem;
+  text-align: left;
+  line-height: 1.5;
+}
+
+.about-content p{
+  font-size: 1.2rem;
+  margin: 2rem 0 3rem ;
+}
+
+/* scroll bar */
+::-webkit-scrollbar{
+  width: 5px;
+}
+::-webkit-scrollbar-thumb{
+  background-color: var(--main-color);
+}
+::-webkit-scrollbar-track{
+  background-color: var(--bg-color);
+  width: 50px;
 }
 
 
