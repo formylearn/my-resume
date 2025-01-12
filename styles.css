@@ -344,10 +344,10 @@ margin: .75rem;
 .btn{
   display: inline-block;
   margin-top: 3rem;
-  padding: .5rem 2rem;
+  padding: .5rem 1rem;
   background: var(--first-color);
   border-radius: 4rem;
-  font-size: 1rem;
+  font-size: .75rem;
   color: white;
   border: 2px solid transparent;
   letter-spacing: 0.1rem;
@@ -446,6 +446,55 @@ margin: .75rem;
   color: var(--text-color);
 }
 
+/* portfolio */
+.port__container{
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  margin-top: auto;
+}
+
+.port__container h2{
+  align-items: start;
+  color: var(--first-color);
+  font-size: 3rem;
+  margin-bottom: 2.5rem;
+}
+
+.port__content{
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  gap: 2rem;
+}
+
+.port__box{
+  display: flex;
+  flex-direction: column;
+  height: 220px;
+  border-radius: 1rem;
+  background-color: white;
+  box-shadow: 0 1px 25px var(--shadow-color);
+}
+
+
+.port__item{
+  align-items: center;
+  justify-content: center;
+  margin: 1rem 2rem;
+  color: var(--text-color);
+  margin-top: auto;
+}
+
+.port__title{
+  padding-bottom: 1rem;
+}
+
+.port__sub{
+  padding-left: .5rem;
+  font-size: .7rem;
+  list-style-type: none;
+} 
 
 /*=============== BREAKPOINTS ===============*/
 /* For small devices */
@@ -488,7 +537,12 @@ margin: .75rem;
   .skills__container{
     gap: 5rem;
   }
+  .port__content{
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+  }
 }
+
 
 /* For large devices */
 @media screen and (min-width: 1115px){
