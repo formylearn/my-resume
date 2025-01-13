@@ -66,6 +66,10 @@ body.dark-theme{
   --body-color: hsl(228, 24%, 16%);
   --shadow-color: hsla(228, 80%, 4%, .3);
 }
+.dark-theme .port__box{
+  background-color: hsl(228, 24%, 16%);
+  box-shadow: 0 1px 25px var(--shadow-color);
+}
 
 /*========== 
 	Color changes in some parts of 
@@ -496,11 +500,23 @@ margin: .75rem;
   list-style-type: none;
 }
 
-
+/* footer */
+.footer{
+  padding: 1.5rem;
+  font-size: 13px;
+}
 
 /*=============== BREAKPOINTS ===============*/
 /* For small devices */
-@media screen and (max-width: 450px){
+@media screen and (max-width: 650px){
+  .port__content{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 2rem;
+  }
+}
+
+@media screen and (max-width: 480px){
   .header__container{
     padding-inline: 1rem;
   }
