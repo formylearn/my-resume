@@ -265,11 +265,11 @@ margin: .75rem;
 }
 
 /* Active link */
-.active-link{
+.active{
   color: var(--first-color);
 }
 
-.active-link::after{
+.active::after{
   content: '';
   position: absolute;
   left: 0;
@@ -500,6 +500,28 @@ margin: .75rem;
   list-style-type: none;
 }
 
+/* contact */
+.contact__container{
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    margin-top: auto;
+}
+
+.contact__container h2{
+  align-items: start;
+  color: var(--first-color);
+  font-size: 3rem;
+  margin-bottom: 2.5rem;
+}
+
+.contact__content{
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  gap: 2rem;
+}
+
 /* footer */
 .footer{
   padding: 1.5rem;
@@ -560,6 +582,7 @@ margin: .75rem;
     grid-template-columns: repeat(1,1fr);
   }
 }
+
 
 
 /* For large devices */

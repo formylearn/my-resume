@@ -16,13 +16,7 @@ const showSidebar = (toggleId, sidebarId, headerId, mainId) =>{
     }
  }
  showSidebar('header-toggle','sidebar', 'header', 'main')
- /*=============== LINK ACTIVE ===============*/
- const sidebarLink = document.querySelectorAll('.sidebar__list a')
- function linkColor(){
-     sidebarLink.forEach(l => l.classList.remove('active-link'))
-     this.classList.add('active-link')
- }
- sidebarLink.forEach(l => l.addEventListener('click', linkColor))
+
  /*=============== DARK LIGHT THEME ===============*/ 
  const themeButton = document.getElementById('theme-button')
  const darkTheme = 'dark-theme'
@@ -53,3 +47,36 @@ const showSidebar = (toggleId, sidebarId, headerId, mainId) =>{
 function visitPage(){
     window.location='http://www.github.com'
 }
+
+
+ /*=============== LINK ACTIVE ===============*/
+ const sidebarLink = document.querySelectorAll('.sidebar__list a')
+ function linkColor(){
+     sidebarLink.forEach(l => l.classList.remove('active'))
+     this.classList.add('active')
+ }
+ sidebarLink.forEach(l => l.addEventListener('click', linkColor))
+
+// active in scroll for later__solve the problem
+// const sections = document.querySelectorAll('section');
+// const navLi = document.querySelectorAll('.sidebar__list a');
+// window.addEventListener('scroll', () => {
+
+//   let current = "";
+//   sections.forEach((section) => {
+//     const sectionTop = section.offsetTop;
+//     const sectionHeight = section.clientHeight;
+//     if(pageYOffset >= (sectionTop - sectionHeight / 3 )){
+//         current = section.getAttribute('class');
+//     }
+//   })
+
+//   console.log(current);
+
+//   navLi.forEach(a => {
+//     a.classList.remove('active');
+//     if(a.classList.contains(current)){
+//       a.classList.add('active');
+//     }
+//   })
+// })
