@@ -145,7 +145,6 @@ margin: .75rem;
   padding-block: 1.5rem;
   margin: .75rem;
   border-radius: 1rem;
-  transition: left .4s, background-color .4s, width .4s;
 }
 
 .sidebar__container,
@@ -472,7 +471,7 @@ margin: .75rem;
 .port__box{
   display: flex;
   flex-direction: column;
-  height: 220px;
+  height: 260px;
   border-radius: 1rem;
   background-color: white;
   box-shadow: 0 1px 25px var(--shadow-color);
@@ -488,17 +487,20 @@ margin: .75rem;
 }
 
 .port__title{
-  padding-bottom: 1rem;
+  padding: 1rem 0;
+  font-size: 1.3rem;
 }
 
 .port__sub{
   padding-left: .5rem;
-  font-size: .7rem;
+  font-size: var(--tiny-font-size);
   list-style-type: none;
+  line-height: 1.5rem;
 }
 
 .port__box .btn{
   margin-top: 2rem;
+  margin-bottom: 1rem;
 }
 
 /* contact */
@@ -617,8 +619,7 @@ margin: .75rem;
       transition: opacity .4s;
     }
 
-    .sidebar__user,
-    .sidebar__title{
+    .sidebar__user{
       transition: padding .4s;
     }
 
