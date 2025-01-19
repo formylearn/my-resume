@@ -76,7 +76,7 @@ body.dark-theme{
 	the website, in dark theme
 ==========*/
 .dark-theme .sidebar-content::-webkit-scrollbar{
-  background-color: hsl(225, 16%, 30%);
+  background-color: hsl(228, 24%, 16%);
 }
 .dark-theme .sidebar-content::-webkit-scrollbar-thumb{
   background-color: hsl(225, 16%, 40%);
@@ -264,26 +264,26 @@ margin: .75rem;
   left: 0;
 }
 
+/* for later  */
 /* Active link */
-.active{
+/* .active{
   color: var(--first-color);
-}
+} */
 
-.active::after{
+/* .active::after{
   content: '';
   position: absolute;
   left: 0;
   width: 3px;
   height: 20px;
   background-color: var(--first-color);
-}
+} */
 
 /* main */
 
 /* home */
 .home__container{
   padding-top: 10rem;
-  padding-bottom: 5rem;
   padding-left: 1.5rem;
   padding-right: 1.5rem;
 }
@@ -309,15 +309,15 @@ margin: .75rem;
 }
 
 .home__content h3{
-  margin-bottom: 2.5rem;
-  margin-top: 1rem;
-  font-size: 1.5rem;
+  margin-bottom: 3.5rem;
+  margin-top: 2rem;
+  font-size: 2rem;
 }
 
 .home__content h1{
-  font-size: 3.5rem;
+  font-size: 4.5rem;
   font-weight: 700;
-  margin-top: 1.5rem;
+  margin-top: 4.5rem;
   line-height: 1;
   
 }
@@ -339,15 +339,9 @@ margin: .75rem;
               0 0 100px var(--main-color);
 } */
 
-.home__content p{
-  font-size: 1.2rem;
-  font-weight: 500;
-  max-width: 1000px;
-}
 
 .btn{
   display: inline-block;
-  margin-top: 3rem;
   padding: .5rem 1rem;
   background: var(--first-color);
   border-radius: 4rem;
@@ -379,10 +373,10 @@ margin: .75rem;
   display: flex;
   justify-content: center;
   align-items: center;
-  padding-top: 6rem;
-  padding-bottom: 5rem;
+  padding-top: 8rem;
   padding-left: 1.5rem;
   padding-right: 1.5rem;
+  gap: 4rem;
 }
 
 .about__container h2 span{
@@ -391,8 +385,7 @@ margin: .75rem;
 
 .about__img img{
   position: relative;
-  width: 100vw;
-  top: 1rem;
+  width: 50vw;
 }
 
 .about__content h2{
@@ -402,20 +395,25 @@ margin: .75rem;
 }
 
 .about__content p{
-  font-size: 1.2rem;
+  font-size: var(--normal-font-size);
   margin: 2rem 0 3rem ;
+  line-height: 2rem;
 }
 
 /* scroll bar */
 ::-webkit-scrollbar{
-  width: 5px;
+  width: 6px;
+  background-color: hsl(228, 18%, 96%);
 }
 ::-webkit-scrollbar-thumb{
-  background-color: var(--main-color);
+  background-color: hsl(228, 85%, 63%);
 }
-::-webkit-scrollbar-track{
-  background-color: var(--bg-color);
-  width: 50px;
+
+.dark-theme::-webkit-scrollbar{
+  background-color: hsla(228, 80%, 4%, .3);
+}
+.dark-theme::-webkit-scrollbar-thumb{
+  background-color: hsl(228, 85%, 63%);
 }
 
 /* skills */
@@ -425,8 +423,7 @@ margin: .75rem;
   align-items: center;
   gap:20rem;
   color: var(--first-color);
-  padding-top: 7rem;
-  padding-bottom: 5rem;
+  padding-top: 10rem;
   padding-left: 1.5rem;
   padding-right: 1.5rem;
 }
@@ -452,7 +449,7 @@ margin: .75rem;
 
 /* portfolio */
 .port__container{
-  padding-top: 5rem;
+  padding-top: 10rem;
   padding-bottom: 5rem;
   padding-left: 1.5rem;
   padding-right: 1.5rem;
@@ -500,6 +497,10 @@ margin: .75rem;
   list-style-type: none;
 }
 
+.port__box .btn{
+  margin-top: 2rem;
+}
+
 /* contact */
 .contact__container{
     padding-top: 5rem;
@@ -520,6 +521,10 @@ margin: .75rem;
   display: grid;
   grid-template-columns: repeat(2,1fr);
   gap: 2rem;
+}
+
+.contact__content h3{
+  padding-left: .5rem;
 }
 
 /* footer */
